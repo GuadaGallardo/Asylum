@@ -1,0 +1,20 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Imagenes/Animaciones/monstruo/2.png" type="Texture" id=1]
+[ext_resource path="res://Imagenes/Animaciones/monstruo/1.png" type="Texture" id=2]
+[ext_resource path="res://Imagenes/Animaciones/monstruo/3.png" type="Texture" id=3]
+[ext_resource path="res://Imagenes/Animaciones/monstruo/4.png" type="Texture" id=4]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "haciaIzquierda",
+"speed": 5.0
+} ]
+
+[node name="Enemigo-Fantasma" type="AnimatedSprite"]
+position = Vector2( 807.987, 363.515 )
+frames = SubResource( 1 )
+animation = "haciaIzquierda"
+playing = true

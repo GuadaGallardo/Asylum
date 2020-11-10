@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Imagenes/Escenario/PIXEL 3.png" type="Texture" id=1]
+[ext_resource path="res://Personaje.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Enemigo-Fantasma.tscn" type="PackedScene" id=3]
+
+[node name="Fondo-hospital" type="TextureRect"]
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Personaje" parent="." instance=ExtResource( 2 )]
+position = Vector2( 431.116, 378.268 )
+
+[node name="Enemigo-Fantasma" parent="." instance=ExtResource( 3 )]

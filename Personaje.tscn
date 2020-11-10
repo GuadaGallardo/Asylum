@@ -1,0 +1,64 @@
+[gd_scene load_steps=28 format=2]
+
+[ext_resource path="res://Imagenes/Animaciones/personaje saltando/1.png" type="Texture" id=1]
+[ext_resource path="res://Imagenes/Animaciones/personaje saltando/2.png" type="Texture" id=2]
+[ext_resource path="res://Imagenes/Animaciones/personaje agachandose/4.png" type="Texture" id=3]
+[ext_resource path="res://Imagenes/Animaciones/personaje saltando/3.png" type="Texture" id=4]
+[ext_resource path="res://Imagenes/Animaciones/personaje agachandose/1.png" type="Texture" id=5]
+[ext_resource path="res://Imagenes/Animaciones/personaje corriendo/1.png" type="Texture" id=6]
+[ext_resource path="res://Imagenes/Animaciones/personaje caminando/1.png" type="Texture" id=7]
+[ext_resource path="res://Imagenes/Animaciones/personaje agachandose/2.png" type="Texture" id=8]
+[ext_resource path="res://Imagenes/Animaciones/personaje corriendo/2.png" type="Texture" id=9]
+[ext_resource path="res://Imagenes/Animaciones/personaje corriendo/6.png" type="Texture" id=10]
+[ext_resource path="res://Imagenes/Animaciones/personaje saltando/4.png" type="Texture" id=11]
+[ext_resource path="res://Imagenes/Animaciones/personaje saltando/5.png" type="Texture" id=12]
+[ext_resource path="res://Imagenes/Animaciones/personaje saltando/6.png" type="Texture" id=13]
+[ext_resource path="res://Imagenes/Animaciones/personaje mirando para todos lados/1.png" type="Texture" id=14]
+[ext_resource path="res://Imagenes/Animaciones/personaje mirando para todos lados/2.png" type="Texture" id=15]
+[ext_resource path="res://Imagenes/Animaciones/personaje corriendo/5.png" type="Texture" id=16]
+[ext_resource path="res://Imagenes/Animaciones/personaje caminando/4.png" type="Texture" id=17]
+[ext_resource path="res://Imagenes/Animaciones/personaje mirando para todos lados/3.png" type="Texture" id=18]
+[ext_resource path="res://Imagenes/Animaciones/personaje mirando para todos lados/4.png" type="Texture" id=19]
+[ext_resource path="res://Imagenes/Animaciones/personaje mirando para todos lados/5.png" type="Texture" id=20]
+[ext_resource path="res://Imagenes/Animaciones/personaje mirando para todos lados/6.png" type="Texture" id=21]
+[ext_resource path="res://Imagenes/Animaciones/personaje caminando/2.png" type="Texture" id=22]
+[ext_resource path="res://Imagenes/Animaciones/personaje agachandose/3.png" type="Texture" id=23]
+[ext_resource path="res://Imagenes/Animaciones/personaje caminando/3.png" type="Texture" id=24]
+[ext_resource path="res://Imagenes/Animaciones/personaje corriendo/3.png" type="Texture" id=25]
+[ext_resource path="res://Imagenes/Animaciones/personaje corriendo/4.png" type="Texture" id=26]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 7 ), ExtResource( 22 ), ExtResource( 24 ), ExtResource( 17 ) ],
+"loop": true,
+"name": "caminando",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 8 ), ExtResource( 23 ), ExtResource( 3 ) ],
+"loop": false,
+"name": "agacharse",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 9 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 16 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "corriendo",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ],
+"loop": false,
+"name": "saltando",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 15 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ) ],
+"loop": false,
+"name": "mirandoCostado",
+"speed": 5.0
+} ]
+
+[node name="Personaje" type="AnimatedSprite"]
+position = Vector2( 412.187, 385.641 )
+scale = Vector2( 1.6, 1.6 )
+frames = SubResource( 1 )
+animation = "mirandoCostado"
+frame = 5
+playing = true
